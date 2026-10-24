@@ -1,0 +1,19 @@
+[project]
+name = "cwiczenia-i-ii-iii-iv"
+version = "0.1.0"
+description = "Pobieranie plików z URL, analiza statystyk wierszy i raportowanie brakujących wartości."
+readme = "README.md"
+authors = [
+    { name = "Wojciech Brzoska", email = "brzoska@riskout.pl" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+cwiczenia-i-ii-iii-iv = "cwiczenia_i_ii_iii_iv:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
